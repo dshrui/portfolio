@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lume Design Studio — Malaysian SME &amp; Wedding Design</title>
+  <meta name="description" content="Sales-focused promo posters, WhatsApp flyers, menus, QR posters, festive campaigns, and digital wedding invites for Malaysian SMEs and events.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- ═══════════════════════ HEADER ═══════════════════════ -->
+  <header class="hdr">
+    <a class="hdr-brand" href="#top" aria-label="Lume Design Studio home">
+      <span class="hdr-logo-pill">
+        <img src="../assets/lume-logo.png" alt="Lume Design Studio logo">
+      </span>
+      <span class="hdr-name">Lume Design Studio</span>
+    </a>
+
+    <button class="hdr-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav id="main-nav" class="hdr-nav" aria-label="Primary navigation">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#before-after">Before / After</a>
+      <a href="#packages">Packages</a>
+      <a href="#contact" class="nav-cta">Get Started</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ═══════════════════════ HERO ═══════════════════════ -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <span class="pill-label">Malaysian SME &amp; Event Design</span>
+          <h1>Designs that turn<br><em>browsers into buyers.</em></h1>
+          <p class="hero-desc">Clean, sales-focused promo posters, WhatsApp flyers, menus, festive campaigns, and digital wedding invites — built for Malaysian businesses and events.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-gold" href="#portfolio">View Portfolio</a>
+            <a class="btn btn-ghost" href="#contact">Free Mini Audit</a>
+          </div>
+        </div>
+
+        <div class="hero-stack" aria-label="Design portfolio preview">
+          <div class="hcard hcard-cafe">
+            <span class="hcard-type">Cafe Promo</span>
+            <h2>Kopi<br>Tiga Lima</h2>
+            <p>Weekday Lunch Set</p>
+            <strong>RM18.90</strong>
+            <small>Mon–Fri · 11am–3pm</small>
+          </div>
+          <div class="hcard hcard-wedding">
+            <span class="hcard-type">Wedding E-Invite</span>
+            <h2>Aisyah<br><em>&amp;</em><br>Daniel</h2>
+            <small>12 Julai 2026 · RSVP</small>
+          </div>
+          <div class="hcard hcard-auto">
+            <span class="hcard-type">WhatsApp Flyer</span>
+            <h2>Prime Auto<br>Detail</h2>
+            <strong>From RM88</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ INTRO ═══════════════════════ -->
+    <section class="intro">
+      <div class="intro-inner">
+        <div class="intro-stats">
+          <div class="stat">
+            <strong>3 Days</strong>
+            <span>Average turnaround</span>
+          </div>
+          <div class="stat">
+            <strong>From RM99</strong>
+            <span>Single promo poster</span>
+          </div>
+          <div class="stat">
+            <strong>Canva Link</strong>
+            <span>Edit anytime yourself</span>
+          </div>
+        </div>
+        <div class="intro-copy">
+          <span class="pill-label pill-dark">Positioning</span>
+          <h2>Made for customers who decide on their phone in 3 seconds.</h2>
+          <p>The work focuses on stronger hierarchy, visible prices, clear offer wording, mobile-friendly layouts, and direct calls to action — practical design for Malaysian SMEs, solo founders, home-based sellers, service businesses, and wedding clients who need clean output without a long agency process.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PORTFOLIO ═══════════════════════ -->
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio-hd">
+        <span class="pill-label">Portfolio Concepts</span>
+        <h2>Client-style work for<br>Malaysian businesses.</h2>
+        <p>Fictional but realistic portfolio concepts showing work for cafes, salons, tuition centres, car services, festive campaigns, and wedding clients.</p>
+      </div>
+
+      <div class="poster-track" role="list" aria-label="Portfolio examples">
+
+        <article class="pcard pcard-cafe" role="listitem">
+          <div class="pcard-badge">Cafe Promo Poster</div>
+          <div class="pcard-body">
+            <span class="pcard-client">Kopi Tiga Lima · Cheras</span>
+            <h3>Weekday<br>Lunch<br>Set</h3>
+            <p>Nasi lemak ayam berempah + iced lemon tea</p>
+            <strong class="pcard-price">RM18.90</strong>
+            <div class="pcard-rule"></div>
+            <small>Mon – Fri · 11am – 3pm · WhatsApp to reserve</small>
+          </div>
+        </article>
+
+        <article class="pcard pcard-salon" role="listitem">
+          <div class="pcard-badge">Price List Design</div>
+          <div class="pcard-body">
+            <span class="pcard-client">GlowHaus Beauty · Subang Jaya</span>
+            <h3>April<br>Self-Care<br>Menu</h3>
+            <dl class="pcard-menu">
+              <div><dt>Classic Facial</dt><dd>RM98</dd></div>
+              <div><dt>Lash Lift</dt><dd>RM88</dd></div>
+              <div><dt>Hair Treatment</dt><dd>RM120</dd></div>
+            </dl>
+            <div class="pcard-rule"></div>
+            <small>DM to book · Limited evening slots</small>
+          </div>
+        </article>
+
+        <article class="pcard pcard-tuition" role="listitem">
+          <div class="pcard-badge">Enrolment Poster</div>
+          <div class="pcard-body">
+            <span class="pcard-client">Cerdas Tuition Hub · Penang</span>
+            <div class="pcard-stamp">2026 Intake Open</div>
+            <h3>Form 1–3<br>Classes</h3>
+            <ul class="pcard-list">
+              <li>BM, English, Maths, Science</li>
+              <li>Small-group weekend classes</li>
+              <li>Trial class available</li>
+            </ul>
+            <div class="pcard-rule"></div>
+            <small>Request Timetable →</small>
+          </div>
+        </article>
+
+        <article class="pcard pcard-auto" role="listitem">
+          <div class="pcard-badge">WhatsApp Flyer</div>
+          <div class="pcard-body">
+            <span class="pcard-client">Prime Auto Detail · Petaling Jaya</span>
+            <h3>Weekend<br>Detailing<br>Deals</h3>
+            <div class="pcard-deals">
+              <div class="deal-row"><span>Express Wash</span><strong>RM38</strong></div>
+              <div class="deal-row"><span>Interior Deep Clean</span><strong>RM180</strong></div>
+              <div class="deal-row"><span>Polish &amp; Wax</span><strong>RM260</strong></div>
+            </div>
+            <div class="pcard-rule"></div>
+            <small>Send car model for slot availability</small>
+          </div>
+        </article>
+
+        <article class="pcard pcard-festive" role="listitem">
+          <div class="pcard-badge">Festive Campaign</div>
+          <div class="pcard-body">
+            <span class="pcard-client">Batik Bunga Co. · Shah Alam</span>
+            <div class="pcard-stamp pcard-stamp-gold">Raya 2026</div>
+            <h3>Batik<br>Gift<br>Sets</h3>
+            <p>Scarves, pouches &amp; custom corporate packs.</p>
+            <strong class="pcard-price">From RM39</strong>
+            <div class="pcard-rule"></div>
+            <small>Pre-order closes 10 March · Bulk rates available</small>
+          </div>
+        </article>
+
+        <article class="pcard pcard-wedding" role="listitem">
+          <div class="pcard-badge">Wedding E-Invite</div>
+          <div class="pcard-body pcard-body-center">
+            <span class="pcard-client">Aisyah &amp; Daniel · Shah Alam</span>
+            <div class="pcard-ornament">✦ Walimatulurus ✦</div>
+            <h3 class="pcard-names">Aisyah<br><em>&amp;</em><br>Daniel</h3>
+            <p>Ahad, 12 Julai 2026</p>
+            <p class="pcard-venue">Dewan Seri Melati<br>Shah Alam</p>
+            <strong class="pcard-time">11.00 pagi – 4.00 petang</strong>
+            <div class="pcard-rule"></div>
+            <small>RSVP · Map · Itinerary</small>
+          </div>
+        </article>
+
+      </div>
+      <p class="track-hint" aria-hidden="true">← Swipe to explore →</p>
+    </section>
+
+    <!-- ═══════════════════════ BEFORE / AFTER ═══════════════════════ -->
+    <section id="before-after" class="transformations">
+      <div class="tf-inner">
+        <div class="tf-hd">
+          <span class="pill-label pill-dark">Before / After</span>
+          <h2>The difference a<br>clear design makes.</h2>
+        </div>
+
+        <div class="tf-case">
+          <div class="tf-meta">
+            <span class="tf-num">01</span>
+            <h3>Kopi Tiga Lima Lunch Promo</h3>
+            <p>A crowded promo rebuilt into one hero price, clear timing, and a direct reservation prompt.</p>
+            <div class="tf-chips">
+              <span>Clear offer</span>
+              <span>Visible price</span>
+              <span>Stronger CTA</span>
+            </div>
+          </div>
+          <div class="tf-compare">
+            <div>
+              <span class="tf-lbl tf-lbl-before">Before</span>
+              <div class="tf-mock tf-before tf-cafe-b">
+                <span class="burst">HOT PROMO!!!</span>
+                <h4>KOPI TIGA LIMA</h4>
+                <p>Nasi lemak chicken chop pasta coffee tea dessert lunch weekday promo set</p>
+                <strong>ONLY RM18.90!!!</strong>
+                <p>11am-3pm while stocks last call now limited time promo</p>
+                <small>Terms and conditions apply. Dine in only.</small>
+              </div>
+            </div>
+            <div>
+              <span class="tf-lbl tf-lbl-after">After</span>
+              <div class="tf-mock tf-after tf-cafe-a">
+                <span class="tf-kicker">Weekday Lunch Set</span>
+                <h4>Kopi Tiga Lima</h4>
+                <p class="tf-lead">Main dish + iced tea</p>
+                <strong>RM18.90</strong>
+                <p>Monday to Friday, 11am – 3pm</p>
+                <a href="#contact">WhatsApp to Reserve</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tf-case">
+          <div class="tf-meta">
+            <span class="tf-num">02</span>
+            <h3>GlowHaus Beauty Price List</h3>
+            <p>A messy service list becomes a scannable price card that helps customers compare treatments before messaging.</p>
+            <div class="tf-chips">
+              <span>Cleaner groups</span>
+              <span>Better spacing</span>
+              <span>Screenshot-ready</span>
+            </div>
+          </div>
+          <div class="tf-compare">
+            <div>
+              <span class="tf-lbl tf-lbl-before">Before</span>
+              <div class="tf-mock tf-before tf-salon-b">
+                <h4>GLOWHAUS BEAUTY PRICE LIST 2026</h4>
+                <p>Hair wash rm25 Cut rm35 treatment rm88 manicure rm45 pedicure rm58 facial rm98 lash lift rm88 promo combo ask staff</p>
+                <p>Open daily book now slots limited walk in available sometimes</p>
+              </div>
+            </div>
+            <div>
+              <span class="tf-lbl tf-lbl-after">After</span>
+              <div class="tf-mock tf-after tf-salon-a">
+                <span class="tf-kicker">GlowHaus Beauty</span>
+                <h4>Service Menu</h4>
+                <dl>
+                  <div><dt>Hair Wash &amp; Cut</dt><dd>RM35</dd></div>
+                  <div><dt>Repair Treatment</dt><dd>RM88</dd></div>
+                  <div><dt>Classic Facial</dt><dd>RM98</dd></div>
+                  <div><dt>Lash Lift</dt><dd>RM88</dd></div>
+                </dl>
+                <a href="#contact">Book Your Slot</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tf-case">
+          <div class="tf-meta">
+            <span class="tf-num">03</span>
+            <h3>Cerdas Tuition Enrolment Poster</h3>
+            <p>Separates audience, subjects, schedule, and registration so parents can decide quickly.</p>
+            <div class="tf-chips">
+              <span>Parent-friendly</span>
+              <span>Structured info</span>
+              <span>Registration focus</span>
+            </div>
+          </div>
+          <div class="tf-compare">
+            <div>
+              <span class="tf-lbl tf-lbl-before">Before</span>
+              <div class="tf-mock tf-before tf-tuition-b">
+                <h4>NEW CLASS NEW CLASS NEW CLASS</h4>
+                <p>BM English Math Science Form 1 2 3 exam tips notes small class homework guidance</p>
+                <strong>REGISTER NOW!!!</strong>
+                <p>Call Teacher Lim today for timetable and fees</p>
+              </div>
+            </div>
+            <div>
+              <span class="tf-lbl tf-lbl-after">After</span>
+              <div class="tf-mock tf-after tf-tuition-a">
+                <span class="tf-kicker">2026 Intake Open</span>
+                <h4>Cerdas Tuition Hub</h4>
+                <p class="tf-lead">Small-group classes for Form 1–3</p>
+                <ul>
+                  <li>BM, English, Maths, Science</li>
+                  <li>Weekend and weekday slots</li>
+                  <li>Homework guidance included</li>
+                </ul>
+                <a href="#contact">Request Timetable</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ SAMPLE FORMATS ═══════════════════════ -->
+    <section id="samples" class="formats">
+      <div class="formats-inner">
+        <div class="formats-hd">
+          <span class="pill-label">Additional Formats</span>
+          <h2>Small assets SMEs<br>actually use.</h2>
+        </div>
+        <div class="fmt-grid">
+
+          <article class="fmt-card fmt-qr">
+            <span class="fmt-type">Google Review Poster</span>
+            <h3>Scan to review us on Google</h3>
+            <div class="qr-block" aria-hidden="true">
+              <div class="qr-sq"></div><div class="qr-sq"></div>
+              <div class="qr-sq"></div><div class="qr-sq"></div>
+            </div>
+            <p>Table-top QR poster for cafes, salons, clinics, and service shops.</p>
+          </article>
+
+          <article class="fmt-card fmt-menu">
+            <span class="fmt-type">Menu Card</span>
+            <h3>Nyonya Bowl, Melaka</h3>
+            <dl class="fmt-pricelist">
+              <div><dt>Spanish Latte</dt><dd>RM12</dd></div>
+              <div><dt>Matcha Cloud</dt><dd>RM14</dd></div>
+              <div><dt>Lemon Tea</dt><dd>RM8</dd></div>
+            </dl>
+            <p>Readable price list for WhatsApp, IG story, and in-store display.</p>
+          </article>
+
+          <article class="fmt-card fmt-raya">
+            <span class="fmt-type">Festive Campaign</span>
+            <h3>Batik Bunga<br>Raya Set</h3>
+            <strong>From RM39</strong>
+            <p>Seasonal campaign visuals for WhatsApp broadcast and social media.</p>
+          </article>
+
+          <article class="fmt-card fmt-einvite">
+            <span class="fmt-type">Wedding Dinner Invite</span>
+            <h3>Mei Ling<br>&amp; Aaron</h3>
+            <p>Saturday, 22 August 2026 · KL</p>
+            <small>With RSVP, map, timing &amp; itinerary add-on.</small>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PACKAGES ═══════════════════════ -->
+    <section id="packages" class="packages">
+      <div class="pkg-inner">
+        <div class="pkg-hd">
+          <span class="pill-label">Packages</span>
+          <h2>Simple offers.<br>No agency complexity.</h2>
+        </div>
+        <div class="pkg-grid">
+
+          <article class="pkg-card">
+            <span class="pkg-tier">Starter</span>
+            <h3>Single Promo Poster</h3>
+            <p>1 poster, 1 WhatsApp story version, and 1 caption or CTA rewrite.</p>
+            <div class="pkg-price">From <strong>RM99</strong></div>
+            <ul class="pkg-perks">
+              <li>Best for one-off promotions</li>
+              <li>PNG export ready</li>
+              <li>Canva editable link</li>
+            </ul>
+            <a class="btn btn-outline-gold" href="#contact">Get Started</a>
+          </article>
+
+          <article class="pkg-card pkg-featured">
+            <span class="pkg-tier">Most Popular</span>
+            <h3>SME Promo Design Kit</h3>
+            <p>3 promo posters, WhatsApp story versions, caption or CTA rewrite, and Canva editable links.</p>
+            <div class="pkg-price">From <strong>RM199</strong></div>
+            <ul class="pkg-perks">
+              <li>Best for SME campaigns</li>
+              <li>Consistent visual direction</li>
+              <li>Suitable for Threads leads</li>
+            </ul>
+            <a class="btn btn-gold" href="#contact">Get Started</a>
+          </article>
+
+          <article class="pkg-card">
+            <span class="pkg-tier">Event</span>
+            <h3>Wedding E-Invite Package</h3>
+            <p>Digital invitation card, WhatsApp version, RSVP or map section, and optional itinerary card.</p>
+            <div class="pkg-price">From <strong>RM150</strong></div>
+            <ul class="pkg-perks">
+              <li>Malay, Chinese, or modern style</li>
+              <li>Guest-friendly layout</li>
+              <li>PNG/PDF export</li>
+            </ul>
+            <a class="btn btn-outline-gold" href="#contact">Get Started</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ PROCESS ═══════════════════════ -->
+    <section class="process">
+      <div class="process-inner">
+        <div class="process-hd">
+          <span class="pill-label pill-dark">How It Works</span>
+          <h2>Simple, low-friction,<br>three steps.</h2>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="step-bar"></div>
+            <span class="step-num">01</span>
+            <h3>Send current material</h3>
+            <p>Share your existing poster, menu, flyer, Instagram page, or wedding details.</p>
+          </article>
+          <article class="step">
+            <div class="step-bar"></div>
+            <span class="step-num">02</span>
+            <h3>Get quick direction</h3>
+            <p>Identify what needs to be clearer — offer, price, layout, CTA, or missing details.</p>
+          </article>
+          <article class="step">
+            <div class="step-bar"></div>
+            <span class="step-num">03</span>
+            <h3>Receive editable files</h3>
+            <p>Final delivery includes a Canva editable link and export-ready PNG or PDF.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <div class="contact-copy">
+          <span class="pill-label">Free Mini Audit</span>
+          <h2>Want a cleaner design for your business or event?</h2>
+          <p>Send your current poster, menu, flyer, IG page, or wedding details. I'll check what can be made clearer before we start.</p>
+          <div class="contact-ctas">
+            <a class="btn btn-gold" href="https://www.threads.net/@your_threads_handle">DM on Threads</a>
+            <a class="btn btn-ghost" href="https://wa.me/601XXXXXXXX">WhatsApp Me</a>
+          </div>
+        </div>
+
+        <div class="audit-box">
+          <h3>Mini Audit Message</h3>
+          <p>Personalise and copy a ready-to-send reply for Threads leads.</p>
+          <label for="v-lead-type">Lead type</label>
+          <select id="v-lead-type">
+            <option value="business">SME / Business</option>
+            <option value="wedding">Wedding / Event</option>
+          </select>
+          <label for="v-lead-name">Name or business</label>
+          <input id="v-lead-name" type="text" placeholder="e.g. Kopi Tiga Lima">
+          <textarea id="v-audit-msg" rows="7" readonly></textarea>
+          <button class="btn btn-gold full-w" id="v-copy-btn" type="button">Copy Message</button>
+          <p class="copy-note" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-foot">
+    <div class="foot-inner">
+      <a class="foot-brand" href="#top" aria-label="Back to top">
+        <span class="foot-logo-pill">
+          <img src="../assets/lume-logo.png" alt="">
+        </span>
+        <span>Lume Design Studio</span>
+      </a>
+      <p>Promo posters · WhatsApp flyers · Menus · QR posters · Festive campaigns · Wedding e-invites</p>
+    </div>
+  </footer>
+
+</body>
+</html>
