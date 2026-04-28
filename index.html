@@ -15,6 +15,10 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <div class="scroll-progress" aria-hidden="true">
+      <span data-scroll-progress></span>
+    </div>
+
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Lume Design Studio home">
         <img class="brand-logo" src="assets/lume-logo-transparent.png" alt="Lume logo">
@@ -36,7 +40,7 @@
     </header>
 
     <main id="top">
-      <section class="hero">
+      <section class="hero" data-section-panel>
         <div class="hero-copy">
           <p class="eyebrow">Malaysian SME &amp; Event Design</p>
           <h1>Designs that make your offer easy to buy.</h1>
@@ -49,21 +53,28 @@
             <a class="button primary" href="#work">View Work</a>
             <a class="button secondary" href="#contact">Request Mini Audit</a>
           </div>
+
+          <div class="hero-focus-controls" role="group" aria-label="Preview focus">
+            <button class="hero-focus is-active" type="button" data-hero-focus="all" aria-pressed="true">All</button>
+            <button class="hero-focus" type="button" data-hero-focus="wellness" aria-pressed="false">Wellness</button>
+            <button class="hero-focus" type="button" data-hero-focus="sport" aria-pressed="false">Sport</button>
+            <button class="hero-focus" type="button" data-hero-focus="kit" aria-pressed="false">Kit</button>
+          </div>
         </div>
 
-        <div class="hero-board" aria-label="Portfolio preview">
-          <figure class="hero-shot hero-wellness">
+        <div class="hero-board" data-hero-board data-hero-focus="all" aria-label="Portfolio preview">
+          <figure class="hero-shot hero-wellness" data-tilt-card data-hero-card="wellness">
             <img src="assets/portfolio/chiro-4.jpg" alt="Chirodayz wellness social media design">
           </figure>
-          <figure class="hero-shot hero-sport">
+          <figure class="hero-shot hero-sport" data-tilt-card data-hero-card="sport">
             <img src="assets/portfolio/padel-34.jpg" alt="Padel Revolution event poster design">
           </figure>
-          <article class="ig-card hero-quote">
+          <article class="ig-card hero-quote" data-tilt-card data-hero-card="kit">
             <span>SME Promo Kit</span>
             <h2>IG posts, stories, captions.</h2>
             <p>Built for the customer deciding from a phone screen.</p>
           </article>
-          <aside class="hero-note">
+          <aside class="hero-note" data-tilt-card data-hero-card="kit">
             <span>Starter Offer</span>
             <strong>3 promo posters, Instagram post and story versions, caption rewrite, and Canva editable links.</strong>
           </aside>
@@ -80,7 +91,21 @@
           </p>
         </div>
 
-        <article class="project">
+        <div class="work-desk" data-workspace data-work-filter="all">
+          <div class="work-controls" role="group" aria-label="Filter portfolio systems">
+            <button class="work-filter is-active" type="button" data-work-filter="all" aria-pressed="true">All systems</button>
+            <button class="work-filter" type="button" data-work-filter="wellness" aria-pressed="false">Wellness</button>
+            <button class="work-filter" type="button" data-work-filter="sport" aria-pressed="false">Sport</button>
+            <button class="work-filter" type="button" data-work-filter="sme" aria-pressed="false">SME / Wedding</button>
+          </div>
+          <aside class="work-preview" aria-live="polite">
+            <span data-work-preview-kicker>Preview selected work</span>
+            <strong data-work-preview-title>Hover a portfolio piece</strong>
+            <p data-work-preview-copy>Use the filters and portfolio cards to inspect how each visual system works as a sellable design package.</p>
+          </aside>
+        </div>
+
+        <article class="project" data-work-project="wellness">
           <div class="project-intro">
             <p class="eyebrow">Wellness / Clinic</p>
             <h3>Chirodayz-style educational posts</h3>
@@ -90,21 +115,21 @@
             </p>
           </div>
           <div class="showcase real-showcase wellness-gallery">
-            <figure class="work-shot feature">
+            <figure class="work-shot feature" tabindex="0" data-preview-card data-preview-kicker="Wellness system" data-tilt-card>
               <img src="assets/portfolio/chiro-4.jpg" alt="Chirodayz myth-busting post">
               <figcaption>
                 <strong>Myth-busting education</strong>
                 <span>One clear statement, soft body imagery, and calm clinical tone.</span>
               </figcaption>
             </figure>
-            <figure class="work-shot">
+            <figure class="work-shot" tabindex="0" data-preview-card data-preview-kicker="Wellness system" data-tilt-card>
               <img src="assets/portfolio/chiro-11.jpg" alt="Chirodayz posture reminder post">
               <figcaption>
                 <strong>Prevention reminder</strong>
                 <span>Lifestyle image tied directly to the health message.</span>
               </figcaption>
             </figure>
-            <figure class="work-shot">
+            <figure class="work-shot" tabindex="0" data-preview-card data-preview-kicker="Wellness system" data-tilt-card>
               <img src="assets/portfolio/chiro-12.jpg" alt="Chirodayz clinic trust post">
               <figcaption>
                 <strong>Clinic trust visual</strong>
@@ -114,7 +139,7 @@
           </div>
         </article>
 
-        <article class="project">
+        <article class="project" data-work-project="sport">
           <div class="project-intro">
             <p class="eyebrow">Sports / Event</p>
             <h3>Padel Revolution event energy</h3>
@@ -124,21 +149,21 @@
             </p>
           </div>
           <div class="showcase real-showcase sport-gallery">
-            <figure class="work-shot feature">
+            <figure class="work-shot feature" tabindex="0" data-preview-card data-preview-kicker="Sports event system" data-tilt-card>
               <img src="assets/portfolio/padel-34.jpg" alt="Padel Revolution tournament event poster">
               <figcaption>
                 <strong>Tournament poster</strong>
                 <span>Large headline, action-led AI composite, prize and sponsor structure.</span>
               </figcaption>
             </figure>
-            <figure class="work-shot">
+            <figure class="work-shot" tabindex="0" data-preview-card data-preview-kicker="Sports event system" data-tilt-card>
               <img src="assets/portfolio/padel-sep-40.jpg" alt="Padel Revolution Sunday Smash poster">
               <figcaption>
                 <strong>Recurring event system</strong>
                 <span>Strong court cues, date hierarchy, and energetic contrast.</span>
               </figcaption>
             </figure>
-            <figure class="work-shot">
+            <figure class="work-shot" tabindex="0" data-preview-card data-preview-kicker="Sports event system" data-tilt-card>
               <img src="assets/portfolio/padel-sep-42.jpg" alt="Padel Revolution rate poster">
               <figcaption>
                 <strong>Offer poster</strong>
@@ -148,7 +173,7 @@
           </div>
         </article>
 
-        <article class="project project-sme">
+        <article class="project project-sme" data-work-project="sme">
           <div id="applications" class="concept-lab" data-concept-lab data-concept="review" aria-label="Interactive design illustration">
             <div class="lab-frame">
               <div class="lab-toolbar" aria-hidden="true">
@@ -193,7 +218,7 @@
           </div>
 
           <div class="showcase sme-showcase">
-            <article class="post sme review-post client-poster is-focused" data-concept-card="review">
+            <article class="post sme review-post client-poster is-focused" tabindex="0" data-concept-card="review" data-preview-card data-preview-kicker="SME adaptation">
               <div class="poster-bg" aria-hidden="true"></div>
               <div class="poster-scrim" aria-hidden="true"></div>
 
@@ -236,7 +261,7 @@
               </div>
             </article>
 
-            <article class="post sme menu-post client-poster" data-concept-card="menu">
+            <article class="post sme menu-post client-poster" tabindex="0" data-concept-card="menu" data-preview-card data-preview-kicker="SME adaptation">
               <div class="poster-bg" aria-hidden="true"></div>
               <div class="poster-scrim" aria-hidden="true"></div>
 
@@ -269,7 +294,7 @@
               <span class="poster-cta">Book by 30 April. Evening slots available Friday to Sunday.</span>
             </article>
 
-            <article class="post sme invite-post client-poster" data-concept-card="invite">
+            <article class="post sme invite-post client-poster" tabindex="0" data-concept-card="invite" data-preview-card data-preview-kicker="Wedding adaptation">
               <div class="poster-bg" aria-hidden="true"></div>
               <div class="poster-scrim" aria-hidden="true"></div>
 
@@ -300,20 +325,33 @@
           <p>Simple packages for SMEs and event clients who need polished output without an agency process.</p>
         </div>
 
-        <div class="package-grid">
-          <article class="package-card">
-            <p>Starter</p>
-            <h3>Single Promo Poster</h3>
-            <strong>From RM99</strong>
-            <ul>
-              <li>1 poster design</li>
-              <li>1 Instagram post and story version</li>
-              <li>Caption or CTA rewrite</li>
-              <li>Canva editable link</li>
-            </ul>
-          </article>
+        <div class="package-shell" data-package-studio data-package="kit">
+          <aside class="package-preview" aria-live="polite">
+            <span data-package-kicker>Selected offer</span>
+            <h3 data-package-title>SME Promo Design Kit</h3>
+            <strong data-package-price>From RM199</strong>
+            <p data-package-copy>Best for businesses that need a small campaign system, not a one-off poster.</p>
+            <div class="output-stack" aria-label="Included outputs">
+              <span data-package-output-one>3 promo posters</span>
+              <span data-package-output-two>Instagram post and story versions</span>
+              <span data-package-output-three>Caption or CTA rewrite</span>
+            </div>
+          </aside>
 
-          <article class="package-card featured">
+          <div class="package-grid">
+            <article class="package-card" role="button" tabindex="0" data-package-card="starter" aria-pressed="false" data-tilt-card>
+              <p>Starter</p>
+              <h3>Single Promo Poster</h3>
+              <strong>From RM99</strong>
+              <ul>
+                <li>1 poster design</li>
+                <li>1 Instagram post and story version</li>
+                <li>Caption or CTA rewrite</li>
+                <li>Canva editable link</li>
+              </ul>
+            </article>
+
+          <article class="package-card featured is-selected" role="button" tabindex="0" data-package-card="kit" aria-pressed="true" data-tilt-card>
             <p>Most Popular</p>
             <h3>SME Promo Design Kit</h3>
             <strong>From RM199</strong>
@@ -325,7 +363,7 @@
             </ul>
           </article>
 
-          <article class="package-card">
+          <article class="package-card" role="button" tabindex="0" data-package-card="wedding" aria-pressed="false" data-tilt-card>
             <p>Wedding</p>
             <h3>Wedding E-Invite Package</h3>
             <strong>From RM150</strong>
@@ -336,10 +374,11 @@
               <li>Optional itinerary card</li>
             </ul>
           </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section-wrap contact" aria-labelledby="contact-title">
+      <section id="contact" class="section-wrap contact" aria-labelledby="contact-title" data-contact-desk>
         <div class="contact-copy">
           <p class="eyebrow">Free Mini Audit</p>
           <h2 id="contact-title">Send the design that needs to sell better.</h2>
@@ -351,9 +390,22 @@
             <a class="button primary" href="https://www.threads.net/@your_threads_handle">DM on Threads</a>
             <a class="button secondary" href="https://wa.me/601XXXXXXXX">WhatsApp</a>
           </div>
+
+          <div class="route-board" aria-label="Lead flow">
+            <span>01 Mini audit</span>
+            <span>02 Direction</span>
+            <span>03 Package</span>
+            <span>04 Canva link</span>
+          </div>
         </div>
 
-        <form class="audit-panel" aria-label="Mini audit message builder">
+        <form class="audit-panel" aria-label="Mini audit message builder" data-tilt-card>
+          <div class="panel-toolbar" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <strong>Lead reply builder</strong>
+          </div>
           <p><strong>Mini Audit Message Builder</strong></p>
           <p>Personalise a short reply for warm leads from Threads.</p>
 
