@@ -102,10 +102,10 @@ function buildAuditMessage() {
   const name = leadName?.value.trim() || "my page";
 
   if (leadType?.value === "wedding") {
-    return `Hi Lume Design Studio, I would like a free mini audit for ${name}.\n\nI can send my current invite or event details. Please check whether the names, date, time, venue/map section, RSVP flow, and Instagram Story version are clear for guests.\n\nIf the direction fits, please share the Wedding E-Invite Package details from RM150.`;
+    return `Hi Lume Design Studio, I would like to request a free mini design audit for ${name}.\n\nI need help reviewing my wedding invite or event details. Please check whether the names, date, time, venue/map section, RSVP flow, and Instagram Story version are clear for guests.\n\nIf suitable, please send me the Wedding E-Invite Package details from RM150.`;
   }
 
-  return `Hi Lume Design Studio, I would like a free mini audit for ${name}.\n\nI can send my current poster, menu, flyer, or Instagram page. Please check the offer clarity, price visibility, layout hierarchy, and CTA.\n\nIf the direction fits, please share the SME Promo Design Kit details from RM199.`;
+  return `Hi Lume Design Studio, I would like to request a free mini design audit for ${name}.\n\nI need help reviewing my current poster, menu, flyer, or Instagram page. Please check whether the offer is clear, the price/details are easy to see, the layout looks polished, and the CTA is strong enough for customers.\n\nIf suitable, please send me the SME Promo Design Kit details from RM199.`;
 }
 
 function updateAuditMessage() {
