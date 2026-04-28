@@ -99,13 +99,13 @@ const packageContent = {
 };
 
 function buildAuditMessage() {
-  const name = leadName?.value.trim() || "your page";
+  const name = leadName?.value.trim() || "my page";
 
   if (leadType?.value === "wedding") {
-    return `Hi, I can help review ${name} and suggest how to make the invite clearer for guests.\n\nIf you send me the current invite or event details, I will check the layout, date/time clarity, venue/map section, RSVP flow, and Instagram Story crop.\n\nIf you like the direction, Lume Design Studio can prepare a Wedding E-Invite Package from RM150.`;
+    return `Hi Lume Design Studio, I would like a free mini audit for ${name}.\n\nI can send my current invite or event details. Please check whether the names, date, time, venue/map section, RSVP flow, and Instagram Story version are clear for guests.\n\nIf the direction fits, please share the Wedding E-Invite Package details from RM150.`;
   }
 
-  return `Hi, I can help review ${name} and suggest how to make the design clearer for customers.\n\nIf you send me your current poster, menu, flyer, or IG page, I will check the offer, price visibility, layout, and CTA.\n\nIf you like the direction, Lume Design Studio can prepare an SME Promo Design Kit from RM199.`;
+  return `Hi Lume Design Studio, I would like a free mini audit for ${name}.\n\nI can send my current poster, menu, flyer, or Instagram page. Please check the offer clarity, price visibility, layout hierarchy, and CTA.\n\nIf the direction fits, please share the SME Promo Design Kit details from RM199.`;
 }
 
 function updateAuditMessage() {
@@ -344,11 +344,11 @@ conceptCards.forEach((card) => {
 copyButton?.addEventListener("click", async () => {
   try {
     await navigator.clipboard.writeText(auditMessage.value);
-    copyStatus.textContent = "Message copied.";
+    copyStatus.textContent = "Inquiry copied.";
   } catch {
     auditMessage.focus();
     auditMessage.select();
-    copyStatus.textContent = "Select and copy the message manually.";
+    copyStatus.textContent = "Select and copy the inquiry manually.";
   }
 });
 
